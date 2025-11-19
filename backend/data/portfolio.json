@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "Custom e-commerce store with payment integration.",
+    "technologies": "React, Node, Stripe"
+  },
+  {
+    "id": 2,
+    "title": "Mobile App",
+    "description": "Cross-platform mobile app for bookings.",
+    "technologies": "React Native, Firebase"
+  }
+]

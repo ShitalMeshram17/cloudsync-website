@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: cloudsync-backend
+    env: node
+    region: oregon
+    branch: main
+    repo: https://github.com/<YOUR_USERNAME>/cloudsync-website
+    buildCommand: 'cd backend && npm install'
+    startCommand: 'cd backend && npm start'
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_JWT_SECRET
+        fromDatabase: false
+      - key: ADMIN_EMAIL
+        fromDatabase: false
+      - key: ADMIN_PASSWORD_HASH
+        fromDatabase: false
+      - key: SENDGRID_API_KEY
+        fromDatabase: false
+      - key: FROM_EMAIL
+        fromDatabase: false
