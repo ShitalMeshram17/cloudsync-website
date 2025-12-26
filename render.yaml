@@ -1,4 +1,3 @@
-
 services:
   - type: web
     name: cloudsync-backend
@@ -14,7 +13,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-        sync: false
 
       - key: ADMIN_JWT_SECRET
         sync: false
